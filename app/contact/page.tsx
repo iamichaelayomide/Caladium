@@ -16,13 +16,13 @@ export default function ContactPage() {
                 Let&apos;s talk strategy
               </h1>
               <p className="mt-5 max-w-xl text-lg leading-8 text-muted">
-                Whether you&apos;re ready to start or just exploring — we&apos;d love to hear from you.
+                Whether you&apos;re ready to start or just exploring - we&apos;d love to hear from you.
               </p>
               <div className="mt-10 space-y-5 text-base leading-8 text-muted">
                 <p>D24, Dolphin Plaza, Corporation Drive, Dolphin Estate, Ikoyi, Lagos, Nigeria</p>
                 <p>enquiries@caladiumconsulting.com</p>
                 <p>+234 802 433 2000</p>
-                <p>Monday – Friday, 9AM – 6PM WAT</p>
+                <p>Monday - Friday, 9AM - 6PM WAT</p>
                 <p>LinkedIn | Twitter | Facebook | Instagram</p>
               </div>
             </div>
@@ -54,7 +54,7 @@ export default function ContactPage() {
                   <textarea rows={4} className="w-full rounded-xl border border-border bg-surface px-4 py-3 text-ink outline-none transition focus:border-accent" />
                 </div>
                 <Button variant="primary" size="lg" className="w-full rounded-xl">
-                  Send Message →
+                  Send Message {">"}
                 </Button>
               </form>
             </Card>

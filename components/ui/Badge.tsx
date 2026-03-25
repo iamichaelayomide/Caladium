@@ -1,20 +1,30 @@
 import { cn } from "@/lib/utils";
 
 export function Badge({
+  children,
   className,
-  children
+  tone = "default"
 }: {
-  className?: string;
   children: React.ReactNode;
+  className?: string;
+  tone?: "default" | "accent" | "gold";
 }) {
+  const toneClass =
+    tone === "accent"
+      ? "bg-accent text-white"
+      : tone === "gold"
+        ? "bg-gold-light text-gold"
+        : "bg-soft text-muted";
+
   return (
-    <div
+    <span
       className={cn(
-        "inline-flex items-center gap-2 rounded-full border border-border bg-white/5 px-4 py-2 text-[12px] font-medium tracking-[0.08em] text-muted shadow-soft backdrop-blur-sm",
+        "inline-flex items-center rounded-sm px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.12em]",
+        toneClass,
         className
       )}
     >
       {children}
-    </div>
+    </span>
   );
 }

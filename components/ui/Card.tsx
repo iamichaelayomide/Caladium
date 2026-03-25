@@ -1,15 +1,11 @@
 import { cn } from "@/lib/utils";
 
 export function Card({
-  className,
-  children
+  children,
+  className
 }: {
-  className?: string;
   children: React.ReactNode;
+  className?: string;
 }) {
-  return (
-    <div className={cn("rounded-2xl border border-border bg-surface shadow-card", className)}>
-      {children}
-    </div>
-  );
+  return <div className={cn("rounded-xl border border-border bg-white shadow-card", className)}>{children}</div>;
 }

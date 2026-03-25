@@ -39,7 +39,7 @@ const tiers: Tier[] = [
       [false, "Priority support"]
     ],
     cta: "Join the Community",
-    variant: "outline" as const
+    variant: "outline"
   },
   {
     name: "Founders Clarity Session",
@@ -58,7 +58,7 @@ const tiers: Tier[] = [
     ],
     cta: "Book a Session",
     featured: true,
-    variant: "primary" as const
+    variant: "primary"
   },
   {
     name: "Full Consulting Engagement",
@@ -77,7 +77,7 @@ const tiers: Tier[] = [
       [true, "Dedicated consulting team"]
     ],
     cta: "Get a Proposal",
-    variant: "outline" as const
+    variant: "outline"
   }
 ];
 
@@ -93,7 +93,7 @@ export function Pricing() {
             Transparent pricing built for African businesses at every stage
           </h2>
           <p className="mt-5 text-lg leading-8 text-muted">
-            We offer packages designed for founders, SMEs, and enterprise organizations — plus custom engagements for larger mandates.
+            We offer packages designed for founders, SMEs, and enterprise organizations - plus custom engagements for larger mandates.
           </p>
           <div className="mt-8">
             <Toggle leftLabel="One-time" rightLabel="Retainer" selected={billing} onChange={setBilling} badge="Save 20%" />
@@ -137,7 +137,7 @@ export function Pricing() {
           ))}
         </div>
         <div className="mx-auto mt-8 max-w-3xl text-center text-sm leading-7 text-muted">
-          <p>For larger mandates including Strategy Retreats, Financial Planning, Customized Strategy Services, and Government Advisory — contact us for a tailored proposal.</p>
+          <p>For larger mandates including Strategy Retreats, Financial Planning, Customized Strategy Services, and Government Advisory - contact us for a tailored proposal.</p>
           <p className="mt-2">enquiries@caladiumconsulting.com · +234 802 433 2000</p>
         </div>
       </div>

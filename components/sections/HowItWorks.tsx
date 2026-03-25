@@ -10,7 +10,7 @@ const steps = [
     number: "01",
     title: "Diagnose & Discover",
     description:
-      "We begin with a deep-dive diagnosis of your organization — analyzing operations, strategy gaps, financial health, and market position to understand where you truly are.",
+      "We begin with a deep-dive diagnosis of your organization - analyzing operations, strategy gaps, financial health, and market position to understand where you truly are.",
     Icon: Search,
     tone: "bg-accent"
   },
@@ -26,7 +26,7 @@ const steps = [
     number: "03",
     title: "Execute & Scale",
     description:
-      "We work alongside your team to implement, track KPIs, and adapt — ensuring your strategy doesn't just look good on paper but drives real, lasting results.",
+      "We work alongside your team to implement, track KPIs, and adapt - ensuring your strategy doesn't just look good on paper but drives real, lasting results.",
     Icon: Rocket,
     tone: "bg-pastel-blue"
   }
@@ -39,20 +39,20 @@ export function HowItWorks() {
         <motion.div initial={{ opacity: 0, y: 32 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.45 }} className="mx-auto max-w-3xl text-center">
           <p className="caption">HOW IT WORKS</p>
           <h2 className="mt-4 font-bricolage text-4xl font-bold tracking-[-0.02em] md:text-5xl">
-            From first conversation to measurable results — in 3 clear steps
+            From first conversation to measurable results - in 3 clear steps
           </h2>
         </motion.div>
         <div className="relative mt-16 grid gap-10 lg:grid-cols-3">
           <div className="absolute left-[16.5%] right-[16.5%] top-10 hidden border-t border-dashed border-border lg:block" />
           {steps.map((step, index) => (
             <motion.div key={step.number} initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.4, delay: index * 0.08 }} className="relative text-center">
-              <span className="absolute left-1/2 top-0 -translate-x-1/2 font-bricolage text-7xl font-bold text-black/[0.05]">
+              <span className="absolute left-1/2 top-0 -translate-x-1/2 font-bricolage text-7xl font-bold text-white/5">
                 {step.number}
               </span>
               <div className={`relative mx-auto flex h-12 w-12 items-center justify-center rounded-full ${step.tone}`}>
                 <step.Icon className={`h-5 w-5 ${index === 0 ? "text-white" : "text-ink"}`} />
               </div>
-              <h3 className="mt-6 font-bricolage text-2xl font-semibold">{step.title}</h3>
+              <h3 className="mt-6 font-bricolage text-2xl font-semibold text-ink">{step.title}</h3>
               <p className="mt-3 text-sm leading-7 text-muted">{step.description}</p>
             </motion.div>
           ))}
@@ -88,7 +88,7 @@ export function HowItWorks() {
                   <motion.path
                     d="M20 190 C80 170, 120 150, 170 130 S280 75, 380 30"
                     fill="none"
-                    stroke="#1A6B4A"
+                    stroke="#AA2F89"
                     strokeLinecap="round"
                     strokeWidth="6"
                     initial={{ pathLength: 0 }}
@@ -97,7 +97,7 @@ export function HowItWorks() {
                     transition={{ duration: 1.2, ease: "easeInOut" }}
                   />
                   {[20, 100, 180, 260, 340].map((x) => (
-                    <line key={x} x1={x} y1="20" x2={x} y2="200" stroke="#E8E8E8" strokeDasharray="4 8" />
+                    <line key={x} x1={x} y1="20" x2={x} y2="200" stroke="#2B2437" strokeDasharray="4 8" />
                   ))}
                 </svg>
               </div>
@@ -105,7 +105,7 @@ export function HowItWorks() {
                 <h4 className="text-sm font-semibold text-muted">Next milestone</h4>
                 <div className="rounded-[20px] bg-black/20 p-4">
                   <p className="text-xs uppercase tracking-[0.2em] text-faint">Board strategy retreat</p>
-                  <p className="mt-2 font-bricolage text-2xl font-semibold">April 18, 2026</p>
+                  <p className="mt-2 font-bricolage text-2xl font-semibold text-ink">April 18, 2026</p>
                   <div className="mt-5">
                     <div className="mb-2 flex justify-between text-sm text-muted">
                       <span>Preparation progress</span>
