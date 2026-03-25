@@ -1,7 +1,8 @@
 {
-  "name": "caladium-consulting-website",
+  "name": "caladium-v2",
   "version": "1.0.0",
   "private": true,
+  "packageManager": "pnpm@10.6.5",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

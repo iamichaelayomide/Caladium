@@ -4,63 +4,59 @@ const config: Config = {
   content: ["./app/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./lib/**/*.{ts,tsx}"],
   theme: {
     extend: {
-      container: {
-        center: true,
-        padding: "1.5rem",
-        screens: {
-          "2xl": "1200px"
-        }
-      },
       fontFamily: {
-        bricolage: ["var(--font-bricolage)", "sans-serif"],
-        jakarta: ["var(--font-jakarta)", "sans-serif"],
-        mono: ["var(--font-mono)", "monospace"]
+        cormorant: ["var(--font-cormorant)", "Georgia", "serif"],
+        dm: ["var(--font-dm-sans)", "system-ui", "sans-serif"]
       },
       colors: {
-        bg: "#F8F8F6",
-        surface: "#FFFFFF",
-        border: "#E8E8E8",
-        ink: "#141414",
+        ink: "#111111",
+        body: "#3A3A3A",
         muted: "#6B6B6B",
-        faint: "#A1A1A1",
-        accent: "#1A6B4A",
-        "accent-light": "#E8F5EF",
-        "accent-hover": "#145A3D",
-        gold: "#C9A84C",
-        "gold-light": "#FBF6E9",
-        pastel: {
-          green: "#D4EDE1",
-          gold: "#F5EDCF",
-          blue: "#D6E8FF",
-          warm: "#F5EDE6",
-          purple: "#EDD6FF"
+        faint: "#A0A0A0",
+        surface: "#FFFFFF",
+        soft: "#F8F7F5",
+        border: "#E8E8E4",
+        accent: {
+          DEFAULT: "#1A6B4A",
+          hover: "#145A3D",
+          light: "#EAF5EF",
+          text: "#0F4A33"
+        },
+        gold: {
+          DEFAULT: "#C9A84C",
+          light: "#FBF6E9"
+        },
+        dark: {
+          DEFAULT: "#111111",
+          surface: "#1A1A1A",
+          border: "#2A2A2A"
         }
       },
+      fontSize: {
+        label: ["11px", { lineHeight: "1", letterSpacing: "0.12em" }]
+      },
       boxShadow: {
-        card: "0 4px 32px rgba(0,0,0,0.07)",
-        "card-hover": "0 8px 40px rgba(0,0,0,0.12)",
-        soft: "0 2px 20px rgba(0,0,0,0.06)"
+        card: "0 2px 24px rgba(0,0,0,0.06)",
+        "card-hover": "0 8px 32px rgba(0,0,0,0.10)",
+        overlay: "0 32px 80px rgba(0,0,0,0.18)"
       },
       animation: {
-        marquee: "marquee 28s linear infinite",
-        float: "float 4s ease-in-out infinite",
-        morph: "morphBlob 8s ease-in-out infinite"
+        marquee: "marquee 32s linear infinite",
+        "marquee-reverse": "marquee-reverse 32s linear infinite",
+        "fade-up": "fadeUp 0.6s cubic-bezier(0.22,1,0.36,1) forwards"
       },
       keyframes: {
         marquee: {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(-50%)" }
         },
-        float: {
-          "0%, 100%": { transform: "translateY(0)" },
-          "50%": { transform: "translateY(-14px)" }
+        "marquee-reverse": {
+          "0%": { transform: "translateX(-50%)" },
+          "100%": { transform: "translateX(0)" }
         },
-        morphBlob: {
-          "0%": { borderRadius: "30% 70% 70% 30% / 30% 30% 70% 70%" },
-          "25%": { borderRadius: "58% 42% 75% 25% / 76% 46% 54% 24%" },
-          "50%": { borderRadius: "50% 50% 33% 67% / 55% 27% 73% 45%" },
-          "75%": { borderRadius: "33% 67% 58% 42% / 63% 68% 32% 37%" },
-          "100%": { borderRadius: "30% 70% 70% 30% / 30% 30% 70% 70%" }
+        fadeUp: {
+          "0%": { opacity: "0", transform: "translateY(24px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" }
         }
       }
     }

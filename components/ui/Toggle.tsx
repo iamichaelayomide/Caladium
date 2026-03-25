@@ -20,7 +20,7 @@ export function Toggle({
   badge?: string;
 }) {
   return (
-    <div className="inline-flex items-center gap-3 rounded-full border border-border bg-white p-1 shadow-soft">
+    <div className="inline-flex items-center gap-3 rounded-full border border-border bg-surface p-1 shadow-soft">
       <button
         className={cn(
           "relative rounded-full px-4 py-2 text-sm font-medium transition-colors",

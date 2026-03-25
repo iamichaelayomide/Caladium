@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 
+import { Logo } from "@/components/ui/Logo";
+
 const columns = {
   Services: [
     "Strategy & Planning",
@@ -19,18 +21,15 @@ const socials = [Linkedin, Twitter, Facebook, Instagram];
 
 export function Footer() {
   return (
-    <footer className="bg-[#0F0F0F] text-white">
+    <footer className="border-t border-border bg-[#060509] text-white">
       <div className="container py-16">
         <div className="grid gap-12 lg:grid-cols-[1.6fr_repeat(4,1fr)]">
           <div>
-            <div className="flex items-center gap-2 font-bricolage text-2xl font-bold">
-              caladium
-              <span className="flex h-7 w-7 items-center justify-center rounded-full bg-white/10">
-                <span className="h-2.5 w-2.5 rotate-45 rounded-[2px] bg-accent" />
-              </span>
-            </div>
+            <Logo dark />
             <p className="mt-4 max-w-xs text-sm leading-7 text-white/70">Strategy, Process &amp; People</p>
-            <p className="mt-4 max-w-sm text-sm leading-7 text-white/55">D24, Dolphin Plaza, Corporation Drive, Dolphin Estate, Ikoyi, Lagos, Nigeria</p>
+            <p className="mt-4 max-w-sm text-sm leading-7 text-white/55">
+              D24, Dolphin Plaza, Corporation Drive, Dolphin Estate, Ikoyi, Lagos, Nigeria
+            </p>
             <div className="mt-6 flex gap-3">
               {socials.map((Icon, index) => (
                 <Link key={index} href="#" className="flex h-8 w-8 items-center justify-center rounded-lg bg-white/10 transition-colors hover:bg-white/20">

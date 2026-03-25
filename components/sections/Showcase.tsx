@@ -22,7 +22,7 @@ export function Showcase() {
           </h2>
         </motion.div>
         <div className="mt-14 grid gap-6 lg:grid-cols-3">
-          <Card className="overflow-hidden bg-ink p-8 text-white lg:col-span-2 lg:row-span-2">
+          <Card className="overflow-hidden bg-[#0b0911] p-8 text-white lg:col-span-2 lg:row-span-2">
             <span className="inline-flex rounded-full bg-accent px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em]">Strategy</span>
             <h3 className="mt-6 max-w-xl font-bricolage text-4xl font-bold leading-tight">
               Global frameworks. Local intelligence. Exceptional outcomes.

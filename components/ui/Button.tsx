@@ -11,9 +11,9 @@ type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
 
 const variants = {
   primary: "bg-accent text-white hover:bg-accent-hover",
-  secondary: "bg-ink text-white hover:bg-accent",
-  outline: "border border-border bg-white text-ink hover:border-accent hover:text-accent",
-  ghost: "bg-transparent text-muted hover:text-ink",
+  secondary: "bg-white text-[#0b0911] hover:bg-[#f5eaf5]",
+  outline: "border border-border bg-white/5 text-ink hover:border-accent hover:text-white hover:bg-white/10",
+  ghost: "bg-transparent text-muted hover:text-white",
   dark: "border border-white/20 bg-white/10 text-white hover:bg-white/20"
 };
 

@@ -59,8 +59,8 @@ export function HowItWorks() {
         </div>
         <motion.div initial={{ opacity: 0, y: 32 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.15 }} transition={{ duration: 0.45, delay: 0.2 }} className="mt-16">
           <Card className="overflow-hidden rounded-[28px] p-0">
-            <div className="bg-ink px-6 py-4 text-sm font-medium text-white">Caladium Client Portal</div>
-            <div className="grid gap-6 bg-white p-6 lg:grid-cols-[1.1fr_1.6fr_1fr]">
+            <div className="bg-[#0b0911] px-6 py-4 text-sm font-medium text-white">Caladium Client Portal</div>
+            <div className="grid gap-6 bg-surface p-6 lg:grid-cols-[1.1fr_1.6fr_1fr]">
               <div className="space-y-4 rounded-[24px] bg-bg p-5">
                 <h4 className="text-sm font-semibold text-muted">Strategy scorecard</h4>
                 {[
@@ -73,7 +73,7 @@ export function HowItWorks() {
                       <span className="text-muted">{label}</span>
                       <span className="font-semibold text-ink">{value}</span>
                     </div>
-                    <div className="h-2 rounded-full bg-white">
+                    <div className="h-2 rounded-full bg-black/20">
                       <div className={`h-2 rounded-full ${tone}`} style={{ width: value }} />
                     </div>
                   </div>
@@ -103,7 +103,7 @@ export function HowItWorks() {
               </div>
               <div className="space-y-4 rounded-[24px] bg-bg p-5">
                 <h4 className="text-sm font-semibold text-muted">Next milestone</h4>
-                <div className="rounded-[20px] bg-white p-4">
+                <div className="rounded-[20px] bg-black/20 p-4">
                   <p className="text-xs uppercase tracking-[0.2em] text-faint">Board strategy retreat</p>
                   <p className="mt-2 font-bricolage text-2xl font-semibold">April 18, 2026</p>
                   <div className="mt-5">

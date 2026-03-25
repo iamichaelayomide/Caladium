@@ -102,7 +102,7 @@ export function Pricing() {
         <div className="mt-14 grid gap-6 lg:grid-cols-3">
           {tiers.map((tier, index) => (
             <motion.div key={tier.name} initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.35, delay: index * 0.08 }} className={tier.featured ? "lg:scale-[1.04]" : ""}>
-              <Card className={`h-full p-8 ${tier.featured ? "border-transparent bg-ink text-white shadow-xl" : ""}`}>
+              <Card className={`h-full p-8 ${tier.featured ? "border-transparent bg-[#0b0911] text-white shadow-xl" : ""}`}>
                 <span className={`rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] ${tier.featured ? "bg-accent text-white" : "bg-accent-light text-accent"}`}>
                   {tier.badge}
                 </span>

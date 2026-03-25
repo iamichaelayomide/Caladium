@@ -20,7 +20,7 @@ export default function JournalArticlePage({ params }: { params: { slug: string 
         <div className="container">
           <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[220px_minmax(0,720px)]">
             <aside className="hidden lg:block">
-              <div className="sticky top-28 rounded-2xl border border-border bg-white p-5 shadow-soft">
+              <div className="sticky top-28 rounded-2xl border border-border bg-surface p-5 shadow-soft">
                 <p className="text-xs uppercase tracking-[0.22em] text-faint">Contents</p>
                 <div className="mt-4 space-y-3 text-sm text-muted">
                   <p>Introduction</p>

@@ -7,7 +7,7 @@ import { faqs } from "@/lib/content";
 
 export function FAQ() {
   return (
-    <section className="section-padding bg-white">
+    <section className="section-padding bg-transparent">
       <div className="container">
         <motion.div initial={{ opacity: 0, y: 32 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.45 }} className="mx-auto max-w-3xl text-center">
           <h2 className="font-bricolage text-4xl font-bold tracking-[-0.02em] md:text-5xl">Frequently asked questions</h2>

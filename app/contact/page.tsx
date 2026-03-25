@@ -35,12 +35,12 @@ export default function ContactPage() {
                 ].map(([label, type]) => (
                   <div key={label}>
                     <label className="mb-2 block text-sm font-medium text-ink">{label}</label>
-                    <input type={type} className="w-full rounded-xl border border-border bg-white px-4 py-3 outline-none transition focus:border-accent" />
+                    <input type={type} className="w-full rounded-xl border border-border bg-surface px-4 py-3 text-ink outline-none transition focus:border-accent" />
                   </div>
                 ))}
                 <div>
                   <label className="mb-2 block text-sm font-medium text-ink">Service Needed</label>
-                  <select className="w-full rounded-xl border border-border bg-white px-4 py-3 outline-none transition focus:border-accent">
+                  <select className="w-full rounded-xl border border-border bg-surface px-4 py-3 text-ink outline-none transition focus:border-accent">
                     <option>Strategy &amp; Planning</option>
                     <option>Org Design</option>
                     <option>Market Entry</option>
@@ -51,7 +51,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <label className="mb-2 block text-sm font-medium text-ink">Message</label>
-                  <textarea rows={4} className="w-full rounded-xl border border-border bg-white px-4 py-3 outline-none transition focus:border-accent" />
+                  <textarea rows={4} className="w-full rounded-xl border border-border bg-surface px-4 py-3 text-ink outline-none transition focus:border-accent" />
                 </div>
                 <Button variant="primary" size="lg" className="w-full rounded-xl">
                   Send Message →
